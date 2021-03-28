@@ -112,3 +112,29 @@ input::placeholder {
         transform:rotate(360deg);
     }
 }
+
+#mainSlide{
+    height: 700px;
+    position: relative;
+    transform: translateY(20%);
+}
+.carousel-item{
+    height: 700px;
+}
+.slideBtn{
+    width: 100px !important;
+}
+.slide1_title{
+    margin-top: 150px;
+    text-align: center;
+}
+.slide1_title h1{
+    color: #fff;
+    font-size: 64px !important;
+}
+.slide1_contents{
+    text-align: center;
+}
+.slide1_contents p{
+    color: #fff;
+}

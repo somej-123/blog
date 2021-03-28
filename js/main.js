@@ -1,6 +1,6 @@
 $(document).ready(function(){
     var aa = true;
-
+    slideStart();
     $("#hamburger").click(function(){
         if(aa == true){
             aa = false;
@@ -22,5 +22,13 @@ $(document).ready(function(){
             // $(".SearchBox").fadeOut(1000);
         }
     });
-
+    //슬라이드 속도
+        function slideStart(){
+            var myCarousel = document.querySelector('#myCarousel')
+            var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 50000,
+            wrap:false
+        })
+    }
+    
 });
