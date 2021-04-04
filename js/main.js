@@ -26,8 +26,8 @@ $(document).ready(function(){
         function slideStart(){
             var myCarousel = document.querySelector('#myCarousel')
             var carousel = new bootstrap.Carousel(myCarousel, {
-            interval: 50000,
-            wrap:false
+            interval: 100000,
+            wrap:true,
         })
     }
     
