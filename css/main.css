@@ -1,10 +1,32 @@
 /* My home nav*/
 
+#main{
+    min-width: 1280px;
+    overflow: hidden;
+}
+#main::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 15%);
+    width: 100%;
+    height: 969px;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-width: 1280px;
+    height: auto;
+}
+
 #nav{
     min-width: 1280px;
     height: 50px;
     /* border: 1px solid #fff; */
-    position: fixed;
+    position: absolute;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
@@ -230,7 +252,7 @@ input::placeholder {
     transform: translateY(-50%);
 }
 .left_div>button{
-    background:#1AAB8A;
+    background:#d48d5d;
     color:#fff;
     border:none;
     position:relative;
@@ -280,22 +302,132 @@ input::placeholder {
       width: 180px;
       height: 180px;
       margin-left: 20px;
+      transition: 1s ease-in-out all;
   }
   .right_div img{
       width: 180px;
       height: 180px;
+      cursor: pointer;
+  }
+  .right_div ul li:hover,.right_div img{
+      transform: scale(1.1);
   }
 
   .right_div li{
-        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        transform: rotate(90deg);
-  }
-  .right_div img{
-      transform: rotate(-90deg);
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
   .right_div li:nth-child(4){
       margin-left: 124px;
   }
 
-
+    .slide3_title{
+    margin-top: 150px;
+    text-align: center;
+    }
+    .slide3_title h1{
+        color: #fff;
+        font-size: 64px !important;
+    }
+    .slide3_contents{
+        margin-top: 20px;
+        /* line-height: 30px; */
+        text-align: center;
+    }
+    .slide3_contents p{
+        color: #fff;
+    }
   
+    #s3_main_Login{
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+    #s3_main_Login>button{
+        background:#3134d8;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:60px;
+        font-size:1.6em;
+        padding:0 2em;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+      }
+      #s3_main_Login>button:hover{
+        background:rgba(255, 255, 255, 0);
+        color:#fff;
+      }
+      #s3_main_Login>button:before,#s3_main_Login>button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: #fff;
+        transition:400ms ease all;
+      }
+      #s3_main_Login>button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      #s3_main_Login>button:hover:before,#s3_main_Login>button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+
+      #s3_main_Login2{
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+    #s3_main_Login2>button{
+        background:#d83198;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:60px;
+        font-size:1.6em;
+        padding:0 2em;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+      }
+      #s3_main_Login2>button:hover{
+        background:rgba(255, 255, 255, 0);
+        color:#fff;
+      }
+      #s3_main_Login2>button:before,#s3_main_Login2>button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: #fff;
+        transition:400ms ease all;
+      }
+      #s3_main_Login2>button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      #s3_main_Login2>button:hover:before,#s3_main_Login2>button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+
+      #s3_ul{
+          text-align: center;
+          list-style: none;
+      }
+      #s3_ul li{
+          display: inline-block;
+      }
+      #s3_ul li:nth-child(2){
+          margin-left: 50px;
+      }

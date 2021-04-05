@@ -17,23 +17,15 @@
             padding: 0;
             margin: 0;
         }
-        #main{
-            min-width: 1280px;
-            overflow: hidden;
+        body{
+          overflow: hidden;
         }
-        #main::after{
-            content: "";
-            position: absolute;
-            z-index: -1;
-            background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 15%);
-            width: 100%;
-            height: 969px;
-        }
+        
     </style>
 </head>
 <body>
-    <video width="1920" height="1080" autoplay loop muted style="position: fixed; z-index: -1;">
-        <source src="video/wave.mp4" type="video/mp4">
+    <video autoplay loop muted>
+        <source src="video/test5.mp4" type="video/mp4">
     </video>
     <section id="main">
     </section>
@@ -113,13 +105,30 @@
                         <img id="test" src="img/bg9.jpg">
                       </li>
                     </ul>
-
-                    
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
-                
+                <div class="slide3_title">
+                  <h1>노트</h1>
+                </div>
+                <div class="slide3_contents">
+                  <p>남들과 함께 글을 공유하는 공간, 개발자의 노트장을 볼 수 있습니다.</p>
+                  <p>로그인을 하여 여러 가지를 체험해보세요</p>
+                </div>
+                <ul id="s3_ul">
+                  <li>
+                    <div id="s3_main_Login">
+                      <button>TOGETHER</button>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="s3_main_Login2">
+                      <button>DEVELOPER</button>
+                    </div>
+                  </li>
+                </ul>
+                </div>
               </div>
             </div>
             <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
