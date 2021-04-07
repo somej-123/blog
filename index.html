@@ -9,6 +9,7 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script src="js/screen.js"></script>
     <link href="css/main.css" rel="stylesheet">
@@ -72,8 +73,11 @@
                     <p>나만의 이미지를 공유하고, 정보를 나눠요!</p>
                     <button>PICTURE</button>
                   </div>
+
                   <div class="right_div">
-                    <ul>
+
+                    <!-- 1281px이상 -->
+                    <ul id="XL_BG">
                       <li>
                         <img id="test" src="img/bg1.jpg">
                       </li>
@@ -102,9 +106,15 @@
                         <img id="test" src="img/bg9.jpg">
                       </li>
                     </ul>
+
+                    <div id="M_BG">
+                        
+                    </div>
+
                   </div>
                 </div>
               </div>
+
               <div class="carousel-item">
                 <div class="slide3_title">
                   <h1>노트</h1>
