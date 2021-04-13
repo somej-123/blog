@@ -1,5 +1,8 @@
 /* My home nav*/
 @media (min-width: 1281px) {
+    #mobile{
+        display: none;
+    }
 #main{
     min-width: 1280px;
     overflow: hidden;
@@ -429,6 +432,9 @@ input::placeholder {
     }
 
 @media (min-width: 768px) and (max-width: 1280px) {
+    #mobile{
+        display: none;
+    }
     video{
         position: fixed;
         top: 50%;
@@ -895,4 +901,216 @@ input::placeholder {
           margin-left: 50px;
       }
 
+}
+@media (min-width: 360px) and (max-width: 768px) {
+    #main{
+        display: none;
+    }
+    #mainSlide{
+        display: none;
+    }
+    #mobile{
+        display: block;
+        overflow: hidden;
+    }
+    #navContainer{
+        display: none;
+    }
+    #searchbox{
+        margin-right: 30px;
+    }
+    #mobile_main{
+        width: 100%;
+        height: 100%;
+    }
+    #mobile_main>.container{
+        padding: 0;
+    }
+    #mobile_slide{
+        height: 100vh;
+    }
+    #mobile_slide img{
+        filter: brightness(50%);
+    }
+    #mobile_video{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -9999;
+        transform: translateX(-50%) translateY(-50%);
+        filter: brightness(60%);
+    }
+    #M_nav{
+        min-width: 360px;
+        height: 50px;
+        /* border: 1px solid #fff; */
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        z-index: 9999;
+    }
+    #M_left_nav{
+        width: 50%;
+        float: left;
+        overflow: hidden;
+    }
+    #M_left_nav img{
+        cursor: pointer;
+        padding-left: 10px;
+    }
+    #M_right_nav{
+        width: 50%;
+        float: left;
+    }
+    #M_right_nav::after{
+        clear: both;
+        content: "";
+        position: relative;
+    }
+    #M_right_nav ul{
+        padding: 23px 5px 0 0;
+        list-style: none;
+        text-align: right;
+        position: relative;
+    }
+    #M_right_nav ul li{
+        display: inline-block;
+        font-weight: bold;
+        margin: 0 0 0 4px;
+        position: relative;
+        top: -7px;
+    }
+    #M_right_nav li h5{
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    /*검색*/
+    #M_SearchBox{
+        width: 100px;
+        height: 30px;
+        float: left;
+        position: relative;
+        top: 5px;
+        margin-left: -100%;
+    }
+    #M_Search{
+        width: 100px;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+    }
+    #M_Search:focus{
+        outline: none;
+    }
+    input[type="search"]::-webkit-search-cancel-button {
+        /* 검색창 X표시 지우기 */
+        display: none;
+      }
+    #M_searchIcon{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
+    }
+    #M_searchIcon:hover{
+        cursor: pointer;
+    }
+    input::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .rotate{
+        animation:1s ease-in-out rotate1;
+    }
+    @keyframes rotate1{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+            transform:rotate(360deg);
+        }
+    }
+    .back{
+        animation:1s ease-in-out rotate2;
+    }
+    @keyframes rotate2{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+            transform:rotate(360deg);
+        }
+    }
+    .M_slide1_title{
+        margin-top: 150px;
+        text-align: center;
+    }
+    .M_slide1_title h1{
+        color: #fff;
+        font-size: 32px !important;
+    }
+    .M_slide1_contents{
+        margin-top: 20px;
+        /* line-height: 30px; */
+        text-align: center;
+    }
+    .M_slide1_contents p{
+        padding: 0px 20px 0px 20px;
+        color: #fff;
+    }
+    #M_s1_main_Login{
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+    #M_s1_main_Login>button{
+        background:#1AAB8A;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:60px;
+        font-size:1.6em;
+        padding:0 2em;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+      }
+      #M_s1_main_Login>button:hover{
+        background:rgba(255, 255, 255, 0);
+        color:#fff;
+      }
+      #M_s1_main_Login>button:before,#M_s1_main_Login>button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: #fff;
+        transition:400ms ease all;
+      }
+      #M_s1_main_Login>button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      #M_s1_main_Login>button:hover:before,#M_s1_main_Login>button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
 }
