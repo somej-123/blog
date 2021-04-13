@@ -911,7 +911,6 @@ input::placeholder {
     }
     #mobile{
         display: block;
-        overflow: hidden;
     }
     #navContainer{
         display: none;
@@ -927,10 +926,10 @@ input::placeholder {
         padding: 0;
     }
     #mobile_slide{
-        height: 100vh;
+        height: 100%;
     }
-    #mobile_slide img{
-        filter: brightness(50%);
+    button{
+        margin-bottom: 30px;
     }
     #mobile_video{
         position: fixed;
@@ -1113,4 +1112,177 @@ input::placeholder {
         width:100%;
         transition:800ms ease all;
       }
+
+    .M_slide2_title{
+        margin-top: 150px;
+        text-align: center;
+    }
+    .M_slide2_title h1{
+        color: #fff;
+        font-size: 32px !important;
+    }
+    .M_slide2_contents{
+        margin-top: 20px;
+        /* line-height: 30px; */
+        text-align: center;
+    }
+    .M_slide2_contents p{
+        padding: 0px 20px 0px 20px;
+        color: #fff;
+    }
+    #M_s2_main_Login{
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+    #M_s2_main_Login>button{
+        background:#d48d5d;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:60px;
+        font-size:1.6em;
+        padding:0 2em;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+      }
+      #M_s2_main_Login>button:hover{
+        background:rgba(255, 255, 255, 0);
+        color:#fff;
+      }
+      #M_s2_main_Login>button:before,#M_s2_main_Login>button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: #fff;
+        transition:400ms ease all;
+      }
+      #M_s2_main_Login>button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      #M_s2_main_Login>button:hover:before,#M_s2_main_Login>button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+    .M_slide3_title{
+        margin-top: 150px;
+        text-align: center;
+    }
+    .M_slide3_title h1{
+        color: #fff;
+        font-size: 32px !important;
+    }
+    .M_slide3_contents{
+        margin-top: 20px;
+        /* line-height: 30px; */
+        text-align: center;
+    }
+    .M_slide3_contents p{
+        padding: 20px;
+        color: #fff;
+    }
+  
+    #M_s3_main_Login{
+        /* margin-top: 60px; */
+        text-align: center;
+    }
+    
+    #M_s3_main_Login>button{
+        background:#3134d8;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:60px;
+        font-size:1.6em;
+        padding:0 1em;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+      }
+      #M_s3_main_Login>button:hover{
+        background:rgba(255, 255, 255, 0);
+        color:#fff;
+      }
+      #M_s3_main_Login>button:before,#M_s3_main_Login>button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: #fff;
+        transition:400ms ease all;
+      }
+      #M_s3_main_Login>button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      #M_s3_main_Login>button:hover:before,#M_s3_main_Login>button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+
+      #M_s3_main_Login2{
+        /* margin-top: 50px; */
+        text-align: center;
+    }
+    
+    #M_s3_main_Login2>button{
+        background:#d83198;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:60px;
+        font-size:1.6em;
+        padding:0 1em;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+      }
+      #M_s3_main_Login2>button:hover{
+        background:rgba(255, 255, 255, 0);
+        color:#fff;
+      }
+      #M_s3_main_Login2>button:before,#M_s3_main_Login2>button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: #fff;
+        transition:400ms ease all;
+      }
+      #M_s3_main_Login2>button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      #M_s3_main_Login2>button:hover:before,#M_s3_main_Login2>button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+
+      #M_s3_ul{
+          text-align: center;
+          list-style: none;
+          padding: 0 10px 0 10px;
+      }
+      #M_s3_ul li{
+          display: inline-block;
+          height: 100px;
+      }
+      /* #M_s3_ul li:nth-child(2){
+          margin-left: 50px;
+      } */
 }
