@@ -983,6 +983,24 @@ input::placeholder {
         position: relative;
         top: -7px;
     }
+    #M_right_nav ul li:nth-child(1)::after{
+        position: absolute;
+        content: "";
+        background-color: rgb(173, 160, 160);
+        width: 1px;
+        height: 10px;
+        top: 5px;
+        right: -6px;
+    }
+    #M_right_nav ul li:nth-child(2)::after{
+        position: absolute;
+        content: "";
+        background-color: rgb(173, 160, 160);
+        width: 1px;
+        height: 10px;
+        top: 5px;
+        right: -6px;
+    }
     #M_right_nav li h5{
         font-size: 16px;
         cursor: pointer;
