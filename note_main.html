@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script>
+    <script src="js/nav.js"></script>
+    <title>::노트</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #DCDCDC;
+        }
+        a{
+            color: #fff !important;
+            text-decoration: none !important;
+        }
+        a:hover{
+          color: lightskyblue !important;
+        }
+        header{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 10px 20px;
+            z-index: 999;
+            /* background-color: rgba(0, 0, 0, 0.5); */
+        }
+        .nav_hamberger{
+            float: left;
+            cursor: pointer;
+        }
+        #nav_hamberger{
+            font-size: 32px;
+            color: #fff;
+        }
+        #nav_ul{
+            display: none;
+            list-style: none;
+            float: left;
+            margin-bottom: 0 !important;
+            padding-top: 3px;
+        }
+        #nav_ul li{
+            display: inline-block;
+            margin-left: 4vw;
+        }
+        #topImg{
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+        #topImg img{
+            position: relative;
+            top: 10%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -9999;
+            transform: translateX(-50%) translateY(-50%);
+            filter: brightness(60%);
+        }
+        #sub_page{
+            margin: 0 auto;
+            width:1044px;
+            position: relative;
+            z-index: 12;
+            background-color: #fff;
+        }
+        #aside_menu{
+            min-width: 307.2px;
+            float: left;
+            background-color: #fff;
+            position: relative;
+            top: -50px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+        #top_contents{
+            min-width: 716.8px;
+            float: right;
+            background-color: #fff;
+            height: 120px;
+            position: relative;
+            top: -50px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+        #contents{
+            min-width: 716.8px;
+            float: right;
+            background-color: #fff;
+            height: 500px;
+            position: relative;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+        #user{
+            width: 100%;
+            padding: 20px;
+            border-bottom: 1px solid #DCDCDC;
+            text-align: center;
+        }
+        #note_login{
+            width: 100%;
+        }
+        #note_list{
+            border-bottom: 1px solid #DCDCDC;
+        }
+        #note_list h4{
+            padding: 10px;
+            font-size: 14px;
+        }
+        #note_list h5{
+            padding: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #note_list ul{
+            list-style: none;
+            padding: 0 2rem;
+        }
+        #picture_list{
+            border-bottom: 1px solid #DCDCDC;
+        }
+        #picture_list h4{
+            padding: 10px;
+            font-size: 14px;
+        }
+        #picture_list h5{
+            padding: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #picture_list ul{
+            list-style: none;
+            padding: 0 2rem;
+        }
+        #picture_list{
+            border-bottom: 1px solid #DCDCDC;
+        }
+        #picture_list h4{
+            padding: 10px;
+            font-size: 14px;
+        }
+        #picture_list h5{
+            padding: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #picture_list ul{
+            list-style: none;
+            padding: 0 2rem;
+        }
+        #up_title{
+            height: 60px;
+            padding: 10px;
+            border-bottom: 1px solid #DCDCDC;
+        }
+        #up_title_left{
+            width: 50%;
+            float: left;
+        }
+        #up_title_left h4{
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+        #up_title_right{
+            width: 50%;
+            float: right;
+            text-align: right;
+        }
+        #down_title{
+            padding: 10px;
+            height: 60px;
+            
+        }
+        #down_title ul{
+            width: 50%;
+            float: left;
+            list-style: none;
+            padding: 0;
+        }
+        #down_title li{
+            margin-right: 20px;
+            display: inline-block;
+        }
+        #down_title li:nth-child(1){
+            margin-left: 5px;
+        }
+        #down_title li h4{
+            color: #7b858e;
+            padding-top: 8px;
+            font-size: 16px;
+        }
+        #down_title_search{
+            width: 50%;
+            float: right;
+            position: relative;
+        }
+        #down_title_search select{
+            border: 1px solid #ebeef1;
+            color: #98a0a7;
+            width: 100px;
+            float: left;
+        }
+        #down_title_search input{
+            background-color: #ebeef1;
+            width: 248px;
+            float: right;
+        }
+        #icon{
+            border: none;
+            background-color: transparent;
+            position: absolute;
+            top: 9px;
+            right: 12px;
+        }
+        #icon_search{
+            color: rgba(128, 128, 128, 0.712);
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="navi">
+        <div class="nav_hamberger">
+            <i class="fas fa-bars hamburger" id="nav_hamberger"></i>
+        </div>
+        <ul id="nav_ul">
+            <li>
+                <h5><a href="index.html">Home</a></h5>
+            </li>
+            <li>
+                <h5><a href="#">Picture</a></h5>
+            </li>
+            <li>
+                <h5><a href="#">Note</a></h5>
+            </li>
+        </ul>
+    </header>
+    <div id="topImg">
+        <img src="img/nightcity.jpg">
+    </div>
+    <div id="sub_page">
+        <div id="aside_menu">
+            <div id="user">
+                <button type="button" class="btn btn-primary" id="note_login">로그인</button>
+            </div>
+            <div id="category">
+                <div id="note_list">
+                    <h4>노트</h4>
+                    <ul>
+                        <li>
+                            <h5>홈</h5>
+                        </li>
+                        <li>
+                            <h5>게시판</h5>
+                        </li>
+                        <li>
+                            <h5>개발자 게시판</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div id="picture_list">
+                    <h4>사진</h4>
+                    <ul>
+                        <li>
+                            <h5>홈</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div id="picture_list">
+                    <h4>문의하기</h4>
+                    <ul>
+                        <li>
+                            <h5>QnA</h5>
+                        </li>
+                        <li>
+                            <h5>건의하기</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="top_contents">
+            <div id="top_contents_list">
+                <div id="up_title">
+                    <div id="up_title_left">
+                        <h4>홈</h3>
+                    </div>
+                    <div id="up_title_right">
+                        <button type="button" class="btn btn-success"><i class="far fa-sticky-note"></i> 내 글 보기</button>
+                        <button type="button" class="btn btn-primary"><i class="far fa-edit"></i> 글쓰기</button>
+                    </div>
+                </div>
+                <div id="down_title">
+                    <ul>
+                        <li>
+                            <h4><i class="far fa-newspaper"></i> 전체</h3>
+                        </li>
+                        <li>
+                            <h4><i class="fas fa-fire-alt"></i> 인기</h3>
+                        </li>
+                        <li>
+                            <h4><i class="far fa-bell"></i> 최신</h3>
+                        </li>
+                    </ul>
+                    <div id="down_title_search">
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="title" selected>제목</option>
+                            <option value="name">작성자</option>
+                        </select>
+                        <form action="" method="GET">
+                          <input type="search" class="form-control" name="search" id="search" placeholder="Search">
+                          <button type="submit" id="icon"><i class="fas fa-search" id="icon_search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contents">
+
+        </div>
+    </div>
+</body>
+</html>
