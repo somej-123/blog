@@ -34,25 +34,22 @@
         <source src="video/test5.mp4" type="video/mp4">
       </video>
     </section>
-    <header id="navContainer">
-        <div id="nav">
-            <div id="left_nav">
-                <img src="img/menu.png" width="50" height="50" style="float: left;" id="hamburger">
-                <div class="SearchBox">
-                    <form action="">
-                        <input type="search" placeholder="search" id="Search">
-                        <i class="fas fa-search" id="searchIcon"></i>
-                    </form>
-                </div>
-            </div>
-            <div id="right_nav">
-                <ul>
-                    <li><h5><a href="#">PICTURE</a></h5></li>
-                    <li><h5><a href="#">NOTE</a></h5></li>
-                    <li><h5><a href="login.html">LOGIN</a></h5></li>
-                </ul>
-            </div>
-    </header>
+    <header id="navi">
+      <div class="nav_hamberger">
+          <i class="fas fa-bars hamburger" id="nav_hamberger"></i>
+      </div>
+      <ul id="nav_ul">
+          <li>
+              <h5><a href="#">Picture</a></h5>
+          </li>
+          <li>
+              <h5><a href="#">Note</a></h5>
+          </li>
+          <li>
+            <h5><a href="login.html">Login</a></h5>
+        </li>
+      </ul>
+  </header>
     <section id="mainSlide">
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -70,7 +67,7 @@
                   <p>로그인을 하여 여러 가지를 체험해보세요</p>
                 </div>
                 <div id="s1_main_Login">
-                  <button>로그인</button>
+                  <button onclick="location.href ='login.html';">로그인</button>
                 </div>
               </div>
               <div class="carousel-item">
@@ -171,25 +168,6 @@
       <video id="mobile_video" autoplay loop muted>
         <source src="video/test5.mp4" type="video/mp4">
     </video>
-    <header id="mobile_nav">
-      <div id="M_nav">
-          <div id="M_left_nav">
-              <img src="img/menu.png" width="50" height="50" style="float: left;" id="M_hamburger">
-              <div id="M_SearchBox">
-                  <form action="">
-                      <input type="search" placeholder="search" id="M_Search">
-                      <i class="fas fa-search" id="M_searchIcon"></i>
-                  </form>
-              </div>
-          </div>
-          <div id="M_right_nav">
-              <ul>
-                  <li><h5>PICTURE</h5></li>
-                  <li><h5>NOTE</h5></li>
-                  <li><h5>LOGIN</h5></li>
-              </ul>
-          </div>
-    </header>
       <div id="mobile_main">
         <div class="container">
           <div id="mobile_slide" class="carousel slide" data-bs-ride="carousel">
@@ -203,7 +181,7 @@
                   <p>로그인을 하여 여러 가지를 체험해보세요</p>
                 </div>
                 <div id="M_s1_main_Login">
-                  <button>로그인</button>
+                  <button onclick="location.href ='login.html';">로그인</button>
                 </div>
               </div>
               <div class="carousel-item h-100">

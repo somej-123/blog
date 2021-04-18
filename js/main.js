@@ -1,50 +1,20 @@
 $(document).ready(function(){
-    var aa = true;
-    var bb = true;
     slideStart();
     slideStart2();
-    $("#hamburger").click(function(){
-        if(aa == true){
-            aa = false;
-            $("#hamburger").addClass("rotate");
-            $("#hamburger").attr("src","img/X.png");
-            $("#hamburger").removeClass("back");
-            $(".SearchBox").stop().animate({
-                "margin-left":0+"%"
-            },1000);
-            // $(".SearchBox").fadeIn(1000);
-        }else{
-            aa = true;
-            $("#hamburger").addClass("back");
-            $("#hamburger").attr("src","img/menu.png");
-            $("#hamburger").removeClass("rotate");
-            $(".SearchBox").stop().animate({
-                "margin-left":-100+"%"
-            },1000);
-            // $(".SearchBox").fadeOut(1000);
+    var color = true;
+    $('.nav_hamberger').click(function(){
+        $('#nav_ul').stop().fadeToggle();
+        if(color == true){
+            color = false;
+            console.log(color);
+            $('#navi').stop().css("background-color","rgba(0, 0, 0, 0.5)");
         }
-    });
-    $("#M_hamburger").click(function(){
-        if(bb == true){
-            bb = false;
-            $("#M_hamburger").addClass("rotate");
-            $("#M_hamburger").attr("src","img/X.png");
-            $("#M_hamburger").removeClass("back");
-            $("#M_SearchBox").stop().animate({
-                "margin-left":0+"%"
-            },1000);
-            // $(".SearchBox").fadeIn(1000);
-        }else{
-            bb = true;
-            $("#M_hamburger").addClass("back");
-            $("#M_hamburger").attr("src","img/menu.png");
-            $("#M_hamburger").removeClass("rotate");
-            $("#M_SearchBox").stop().animate({
-                "margin-left":-100+"%"
-            },1000);
-            // $(".SearchBox").fadeOut(1000);
+        else{
+            color =  true;
+            console.log(color);
+            $('#navi').stop().css("background-color","rgba(0, 0, 0, 0)");
         }
-    });
+    })
         //슬라이드 속도
         function slideStart(){
             var myCarousel = document.querySelector('#myCarousel')
