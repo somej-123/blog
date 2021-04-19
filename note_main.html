@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="css/note_main.css" rel="stylesheet"/>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -26,207 +27,6 @@
         }
         a:hover{
           color: lightskyblue !important;
-        }
-        header{
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            padding: 10px 20px;
-            z-index: 999;
-            /* background-color: rgba(0, 0, 0, 0.5); */
-        }
-        .nav_hamberger{
-            float: left;
-            cursor: pointer;
-        }
-        #nav_hamberger{
-            font-size: 32px;
-            color: #fff;
-        }
-        #nav_ul{
-            display: none;
-            list-style: none;
-            float: left;
-            margin-bottom: 0 !important;
-            padding-top: 3px;
-        }
-        #nav_ul li{
-            display: inline-block;
-            margin-left: 4vw;
-        }
-        #topImg{
-            width: 100%;
-            height: 300px;
-            overflow: hidden;
-        }
-        #topImg img{
-            position: relative;
-            top: 10%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -9999;
-            transform: translateX(-50%) translateY(-50%);
-            filter: brightness(60%);
-        }
-        #sub_page{
-            margin: 0 auto;
-            width:1044px;
-            position: relative;
-            z-index: 12;
-            background-color: #fff;
-        }
-        #aside_menu{
-            min-width: 307.2px;
-            float: left;
-            background-color: #fff;
-            position: relative;
-            top: -50px;
-            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-        }
-        #top_contents{
-            min-width: 716.8px;
-            float: right;
-            background-color: #fff;
-            height: 120px;
-            position: relative;
-            top: -50px;
-            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-        }
-        #contents{
-            min-width: 716.8px;
-            float: right;
-            background-color: #fff;
-            height: 500px;
-            position: relative;
-            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-        }
-        #user{
-            width: 100%;
-            padding: 20px;
-            border-bottom: 1px solid #DCDCDC;
-            text-align: center;
-        }
-        #note_login{
-            width: 100%;
-        }
-        #note_list{
-            border-bottom: 1px solid #DCDCDC;
-        }
-        #note_list h4{
-            padding: 10px;
-            font-size: 14px;
-        }
-        #note_list h5{
-            padding: 0 10px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        #note_list ul{
-            list-style: none;
-            padding: 0 2rem;
-        }
-        #picture_list{
-            border-bottom: 1px solid #DCDCDC;
-        }
-        #picture_list h4{
-            padding: 10px;
-            font-size: 14px;
-        }
-        #picture_list h5{
-            padding: 0 10px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        #picture_list ul{
-            list-style: none;
-            padding: 0 2rem;
-        }
-        #picture_list{
-            border-bottom: 1px solid #DCDCDC;
-        }
-        #picture_list h4{
-            padding: 10px;
-            font-size: 14px;
-        }
-        #picture_list h5{
-            padding: 0 10px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        #picture_list ul{
-            list-style: none;
-            padding: 0 2rem;
-        }
-        #up_title{
-            height: 60px;
-            padding: 10px;
-            border-bottom: 1px solid #DCDCDC;
-        }
-        #up_title_left{
-            width: 50%;
-            float: left;
-        }
-        #up_title_left h4{
-            padding-top: 5px;
-            padding-left: 5px;
-        }
-        #up_title_right{
-            width: 50%;
-            float: right;
-            text-align: right;
-        }
-        #down_title{
-            padding: 10px;
-            height: 60px;
-            
-        }
-        #down_title ul{
-            width: 50%;
-            float: left;
-            list-style: none;
-            padding: 0;
-        }
-        #down_title li{
-            margin-right: 20px;
-            display: inline-block;
-        }
-        #down_title li:nth-child(1){
-            margin-left: 5px;
-        }
-        #down_title li h4{
-            color: #7b858e;
-            padding-top: 8px;
-            font-size: 16px;
-        }
-        #down_title_search{
-            width: 50%;
-            float: right;
-            position: relative;
-        }
-        #down_title_search select{
-            border: 1px solid #ebeef1;
-            color: #98a0a7;
-            width: 100px;
-            float: left;
-        }
-        #down_title_search input{
-            background-color: #ebeef1;
-            width: 248px;
-            float: right;
-        }
-        #icon{
-            border: none;
-            background-color: transparent;
-            position: absolute;
-            top: 9px;
-            right: 12px;
-        }
-        #icon_search{
-            color: rgba(128, 128, 128, 0.712);
-            width: 20px;
-            height: 20px;
         }
     </style>
 </head>
@@ -328,8 +128,372 @@
             </div>
         </div>
         <div id="contents">
-
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">1</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">2</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">3</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">4</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">5</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">6</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">7</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">8</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">9</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">10</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">11</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">12</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">13</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">14</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">15</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">16</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">17</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">18</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">19</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+            <div class="list">
+                <div class="num_list">
+                    <span class="no_list">20</span>
+                </div>
+                <div class="title_list">
+                    <div class="title_list_top">
+                        <p class="title_list_main">테스트입니다. [<span class="title_list_comment">0</span>]</p>
+                    </div>
+                    <div class="title_list_bottom">
+                        <p><span class="title_text">전체</span> <span class="title_day">2021-04-19</span> <a href="#"><span class="title_user">관리자</span></a></p>
+                    </div>
+                </div>
+                <div class="img_list">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+        </div>
+        <div id="list_control">
+            <button id="list_prev" class="btn btn-outline-secondary"><i class="fas fa-arrow-left"></i> 이전</button>
+            <button id="list_next" class="btn btn-outline-secondary">다음 <i class="fas fa-arrow-right"></i></button>
         </div>
     </div>
+    <footer>
+        <div id="footer_main">
+            <ul id="footer_ul">
+                <li>
+                    <a href="#">홈페이지 소개</a>
+                </li>
+                <li>
+                    <a href="#">문의사항</a>
+                </li>
+                <li>
+                    <a href="#">채용</a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer_etc">
+            <div id="footer_title">
+                <a href="#"><h1>SOSOHAM</h1></a>
+            </div>
+            <div id="footer_manager">
+                <p>MANAGER <span>우정호</span> CALL CENTER <span>01062726430</span> EMAIL ADDRESS : <a href="mailto:somej@naver.com">우정호(somej@naver.com)</a></p>
+                <p>COMPANY <span>SOSOHAM</span> BUSINESS REGISTRATION NO COPYRIGHT © <span>SOSOHAM</span>. ALL RIGHTS RESERVED.</p>
+                <div class="logo_sns">
+                    <ul>
+                        <li>
+                            <img src="img/네이버밴드2.png" alt="네이버 벤드" onmouseover="src='img/네이버밴드.png'" onmouseout="src='img/네이버밴드2.png'" onclick="window.open('http://band.us/home')">
+                        </li>
+                        <li>
+                            <img src="img/인스타그램2.png" alt="인스타그램" onmouseover="src='img/인스타그램1.png'" onmouseout="src='img/인스타그램2.png'" onclick="window.open('https://www.instagram.com/?hl=ko')">
+                        </li>
+                        <li>
+                            <img src="img/카카오스토리2.png" alt="네이버 벤드" onmouseover="src='img/카카오스토리1.png'" onmouseout="src='img/카카오스토리2.png'" onclick="window.open('https://accounts.kakao.com/login/kakaostory')">
+                        </li>
+                        <li>
+                            <img src="img/페이스북2.png" alt="네이버 벤드" onmouseover="src='img/페이스북.png'" onmouseout="src='img/페이스북2.png'" onclick="window.open('https://www.facebook.com/')">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
 </body>
 </html>
