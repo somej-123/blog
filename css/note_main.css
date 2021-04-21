@@ -621,6 +621,7 @@ header{
         float: left;
         list-style: none;
         padding: 0;
+        margin-bottom: 0;
     }
     #down_title li{
         margin-right: 1.3889vw;
@@ -633,7 +634,6 @@ header{
         color: #7b858e;
         padding-top: 8px;
         font-size: 16px;
-        margin-bottom: 0;
     }
     #down_title_search{
         width: 40%;
