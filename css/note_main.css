@@ -1,11 +1,22 @@
 header{
     width: 100%;
     position: fixed;
+    height: 55px;
     top: 0;
     left: 0;
     padding: 10px 20px;
     z-index: 999;
     /* background-color: rgba(0, 0, 0, 0.5); */
+}
+#navi_background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    z-index: -1;
 }
 .nav_hamberger{
     float: left;
@@ -34,6 +45,7 @@ header{
 #nav_ul li{
     display: inline-block;
     margin-left: 4vw;
+    margin-bottom: 0;
 }
 @media (min-width: 1061px) {
     

@@ -17,4 +17,6 @@ $(document).ready(function(){
         $("#sub_page").removeClass("contentsBackground");
         $("footer").removeClass("contentsBackground");
     })
+
+    
 })
