@@ -613,7 +613,7 @@ header{
         content: "";
     }
     #down_title{
-        padding: 9px;
+        padding: 9px 9px 8px 9px;
         height: 60px;
     }
     #down_title ul{
