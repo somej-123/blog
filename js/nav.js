@@ -10,6 +10,18 @@ $(document).ready(function(){
         }else{
             $('#navi_background').stop().css("background-color","rgba(0, 0, 0, 0)");
         }
+
+        if($scroll > 195){
+            $('#aside_menu').css({
+                "position":"fixed",
+                "top":"55px"
+            });
+        }else{
+            $('#aside_menu').css({
+                "position": "relative",
+                "top": "-50px"
+            });
+        }
     });
     
     $('.nav_hamberger').click(function(){
@@ -22,5 +34,5 @@ $(document).ready(function(){
             color =  true;
             $('#navi').stop().css("background-color","rgba(0, 0, 0, 0)");
         }
-    })
+    });
 });

@@ -83,36 +83,21 @@ input:focus{
 }
 #login_btn{
     margin-top: 40px !important;
-    color: #fff !important;
-    border-color: #fff !important;
-}
-#login_btn:hover{
-    border-color: #0d6efd !important;
 }
 #login_btn button{
     width: 100%;
     padding: 10px 0px;
+    color: #fff;
+    border-color: #fff;
 }
-#sub_login{
-    position: relative;
+#login_btn2:hover{
+    border-color: #0d6efd;
 }
-#sub_login p{
-    width: 100%;
-    padding: 10px 0px;
-}
-#sub_login::after{
-    content: "";
+#confirmID{
     position: absolute;
-    width: 1px;
+    top: 0;
+    right: 0;
     height: 30px;
-    background-color: #fff;
-    top: 10px;
-    left: 50%;
-    transform:translateX(-50%);
-}
-#find_IDPW{
-    color: #fff !important;
-}
-#newID{
-    color: #fff !important;
+    padding: 0;
+    width: 100px;
 }
