@@ -44,6 +44,9 @@
             <li>
                 <h5><a href="note_main.html">Note</a></h5>
             </li>
+            <li>
+              <h5><a href="login.html">Login</a></h5>
+          </li>
         </ul>
     </header>
     <section id="main">
@@ -65,8 +68,10 @@
                         <div class="mb-4">
                             <input type="password" class="form-control" name="input_password" id="input_password" placeholder="Password">
                         </div>
-                        <div class="mb-4">
+                        <div class="mb-4" style="position: relative;">
                             <input type="password" class="form-control" name="input_password2" id="input_password2" placeholder="Password Confirm">
+                            <span id="password_confirm_check_N">비밀번호가 일치 하지 않습니다.</span>
+                            <span id="password_confirm_check_Y">비밀번호가 일치합니다.</span>
                         </div>
                         <div id="login_btn" class="mb-3">
                             <button class="btn btn-outline-primary" type="submit" id="login_btn2">회원가입</button>

@@ -43,6 +43,9 @@
             <li>
                 <h5><a href="note_main.html">Note</a></h5>
             </li>
+            <li>
+              <h5><a href="login.html">Login</a></h5>
+          </li>
         </ul>
     </header>
     <section id="main">
@@ -55,7 +58,7 @@
                 <div id="login_info">
                     <form action="" method="POST">
                         <div class="mb-3">
-                            <input type="email" autocomplete="off" class="form-control" name="input_EMAIL" id="input_email" placeholder="name@example.com">
+                            <input type="text" autocomplete="off" class="form-control" name="input_ID" id="input_ID" placeholder="ID">
                         </div>
                         <div class="mb-5">
                             <input type="password" class="form-control" name="input_password" id="input_password" placeholder="Password">
@@ -69,7 +72,7 @@
                             <p id="find_IDPW">아이디 / 비밀번호 찾기</p>
                         </div>
                         <div class="col-6">
-                            <p id="newID">회원가입</p>
+                            <p id="newID" style="cursor: pointer;" onclick="location.href='sign_in.html'">회원가입</p>
                         </div>
                     </div>
                 </div>

@@ -101,3 +101,17 @@ input:focus{
     padding: 0;
     width: 100px;
 }
+#password_confirm_check_N{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(255, 0, 0);
+}
+#password_confirm_check_Y{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(37, 184, 37)
+}
